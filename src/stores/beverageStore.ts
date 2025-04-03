@@ -33,7 +33,11 @@ export const useBeverageStore = defineStore("BeverageStore", {
         this.beverageList.push(this.currentBeverage);
     },
     showBeverage() {
-      
+      this.currentBase = this.currentBeverage.base
+      this.currentTemp = this.currentBeverage.temp
+      this.currentSyrup = this.currentBeverage.syrup
+      this.currentCreamer = this.currentBeverage.creamer
+      this.currentName = this.currentBeverage.name
     },
   },
   persist: true,
